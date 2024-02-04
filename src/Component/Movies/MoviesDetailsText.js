@@ -1,6 +1,5 @@
-import {Button} from "react-bootstrap";
-import {Link} from "react-router-dom";
-import RatingStars from "react-rating-stars-component";
+import {Button, Col} from "react-bootstrap";
+import ReactStars from "react-rating-stars-component";
 
 const MoviesDetailsText = ({moveDetailis}) => {
   const ratingChanged = (newRating) => {
@@ -31,15 +30,13 @@ const MoviesDetailsText = ({moveDetailis}) => {
         </p>
       </div>
       <div className="">
-        <RatingStars
+        <ReactStars
           count={5}
           onChange={ratingChanged}
           size={24}
-          color="#ffd700"
-          value={4.5}
-          edit={true}
           isHalf={true}
-          activeColor="ffd700"
+          value={4}
+          activeColor="#ffd700"
         />
       </div>
       <div className="my-5 d-flex justify-content-center align-items-center">
