@@ -1,5 +1,5 @@
-import {Button, Col} from "react-bootstrap";
-import ReactStars from "react-rating-stars-component";
+import {Button} from "react-bootstrap";
+import RatingStars from "react-rating-stars-component";
 
 const MoviesDetailsText = ({moveDetailis}) => {
   const ratingChanged = (newRating) => {
@@ -30,7 +30,7 @@ const MoviesDetailsText = ({moveDetailis}) => {
         </p>
       </div>
       <div className="">
-        <ReactStars
+        <RatingStars
           count={5}
           onChange={ratingChanged}
           size={24}
