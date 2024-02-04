@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  /* Colors */
+  --Primary: #BF9B30;
+  --Secondary: #EDD587;
+  --Green: #34A853;
+  --Red: #ea4335;
+  --Grey: #D0D0D0;
+  --Black: #1A1919;
+  --White-for-txt: #FFFFFF;
+  --White-for-icon: #F8F8F8;
+  --Gradient-bg: #2a2a2a;
+  --Alpha-bg: #1515167e;
+  --Top-bg: #151516be;
+  --Footer-bg: #212121;
+
+  /* Colors of Button */
+  --btn-defauit: #BF9B30;
+  --btn-hover: #e7bc3c;
+  --btn-disabled: #e1e1e1;
+
+  /* Transition */
+  --transition-1: all 0.3s ease;
+  --transition-2: all 0.4s ease;
+
+  /* linear gradient */
+  --linear-gradient: -webkit-linear-gradient(left, #2a2929, #1a1919);
+
+  /* Font-family */
+  --font-family: 'Open Sans', sans-serif;
+  --font-semiBold: 600px;
+  --font-regular: 400px;
+
+  /* font-weight */
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+
+  /* typography */
+
+
+
+  --p-14: 14px;
+  --p-16: 16px;
+  --p-18: 18px;
+  --p-20: 20px;
+  --p-22: 22px;
+  --p-24: 24px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::-webkit-scrollbar {
+  /* width: 15px; */
+  background-color: var(--Black);
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--btn-defauit);
+  border-radius: 15px;
+}
+
+.app {
+  background-color: var(--Black);
+  min-height: 100vh;
+}
+
+/* global spinner in app */
+.spinner-border {
+  color: var(--btn-defauit) !important;
+}
+
+/* disply grid row responsive */
+.disply_row {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+  gap: 10px;
+}

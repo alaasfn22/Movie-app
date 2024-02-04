@@ -1,0 +1,33 @@
+.navbar {
+    background-color: var(--Footer-bg) !important;
+    color: var(--White-for-txt) !important;
+}
+
+.navbar .nav_brand {
+    color: var(--Primary);
+    transition: var(--transition-1);
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.nav_brand:hover {
+    color: var(--White-for-txt) !important;
+}
+
+.navbar .btn-search {
+    background-color: var(--Primary);
+    color: var(--White-for-txt);
+    transition: var(--transition-1);
+    border: none;
+}
+
+.navbar .btn-search:hover,
+.btn-search:focus {
+    background-color: var(--Secondary) !important;
+}
+
+.navbar .input_search:focus {
+    box-shadow: -2px 2px 1px 1px var(--Primary);
+    border: none;
+    outline: none;
+}
